@@ -35,109 +35,109 @@
 	],
 	"allSkills": [
 		{
-			"name": "acrobatics",
+			"name": "acrobàcies",
 			"stat": "dex"
 		},
 		{
-			"name": "animal Handling",
+			"name": "tracte amb animals",
 			"stat": "wis"
 		},
 		{
-			"name": "arcana",
+			"name": "arcans",
 			"stat": "int"
 		},
 		{
-			"name": "athletics",
+			"name": "atletisme",
 			"stat": "str"
 		},
 		{
-			"name": "deception",
+			"name": "engany",
 			"stat": "cha"
 		},
 		{
-			"name": "history",
+			"name": "història",
 			"stat": "int"
 		},
 		{
-			"name": "insight",
+			"name": "intuïció",
 			"stat": "wis"
 		},
 		{
-			"name": "intimidation",
+			"name": "intimidació",
 			"stat": "cha"
 		},
 		{
-			"name": "investigation",
+			"name": "investigació",
 			"stat": "int"
 		},
 		{
-			"name": "medicine",
+			"name": "medicina",
 			"stat": "wis"
 		},
 		{
-			"name": "nature",
+			"name": "natura",
 			"stat": "int"
 		},
 		{
-			"name": "perception",
+			"name": "percepció",
 			"stat": "wis"
 		},
 		{
-			"name": "performance",
+			"name": "actuació",
 			"stat": "cha"
 		},
 		{
-			"name": "persuasion",
+			"name": "persuasió",
 			"stat": "cha"
 		},
 		{
-			"name": "religion",
+			"name": "religió",
 			"stat": "int"
 		},
 		{
-			"name": "sleight of Hand",
+			"name": "joc de mans",
 			"stat": "dex"
 		},
 		{
-			"name": "stealth",
+			"name": "sigil",
 			"stat": "dex"
 		},
 		{
-			"name": "survival",
+			"name": "supervivència",
 			"stat": "wis"
 		}
 	],
 	"allNormalDamageTypes": [
-		"acid",
-		"bludgeoning",
-		"cold",
-		"fire",
-		"force",
-		"lightning",
-		"necrotic",
-		"piercing",
-		"poison",
-		"psychic",
+		"àcid",
+		"contundent",
+		"fred",
+		"foc",
+		"força màgica",
+		"llamp",
+		"necròtic",
+		"perforant",
+		"verí",
+		"psíquic",
 		"radiant",
-		"slashing",
-		"thunder"
+		"tallant",
+		"tro"
 	],
 	"allConditions": [
-		"blinded",
-		"charmed",
-		"deafened",
-		"exhaustion",
-		"frightened",
-		"grappled",
-		"incapacitated",
+		"cegat",
+		"encantat",
+		"ensordeit",
+		"esgotament",
+		"espantat",
+		"atrapat",
+		"incapacitat",
 		"invisible",
-		"paralyzed",
-		"petrified",
-		"poisoned",
-		"prone",
-		"restrained",
-		"stunned",
-		"unconscious"
+		"paralitzat",
+		"petrificat",
+		"enverinament",
+		"prostrat",
+		"restringit",
+		"atordit",
+		"inconscient"
 	],
 	"sizes": {
 		"menut": {
