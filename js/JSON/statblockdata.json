@@ -140,40 +140,40 @@
 		"unconscious"
 	],
 	"sizes": {
-		"tiny": {
+		"menut": {
 			"hitDie": 4
 		},
-		"small": {
+		"petit": {
 			"hitDie": 6
 		},
-		"medium": {
+		"mitjà": {
 			"hitDie": 8
 		},
-		"large": {
+		"gran": {
 			"hitDie": 10
 		},
-		"huge": {
+		"enorme": {
 			"hitDie": 12
 		},
-		"gargantuan": {
+		"colossal": {
 			"hitDie": 20
 		}
 	},
 	"types": [
-		"aberration",
-		"beast",
+		"aberració",
+		"bèstia",
 		"celestial",
-		"construct",
-		"dragon",
+		"constructe",
+		"drac",
 		"elemental",
-		"fey",
-		"fiend",
-		"giant",
-		"humanoid",
-		"monstrosity",
-		"ooze",
-		"plant",
-		"undead"
+		"feèric",
+		"infernal",
+		"gegant",
+		"humanoide",
+		"monstruositat",
+		"llot",
+		"planta",
+		"no-mort"
 	],
 	"crs": {
 		"0": {
@@ -378,8 +378,8 @@
 	"defaultPreset": {
 		"slug": "",
 		"name": "Monster",
-		"size": "Medium",
-		"type": "humanoid",
+		"size": "Mitjà",
+		"type": "humanoide",
 		"subtype": "",
 		"group": null,
 		"alignment": "any alignment",

@@ -2,8 +2,8 @@ var data;
 
 var mon = {
     name: "Monster",
-    size: "medium",
-    type: "humanoid",
+    size: "mitjà",
+    type: "humanoide",
     tag: "",
     alignment: "any alignment",
     hitDice: 5,
@@ -1741,7 +1741,7 @@ var StringFunctions = {
         if (mon.customHP)
             return mon.hpText;
         let conBonus = MathFunctions.PointsToBonus(mon.conPoints);
-        hitDieSize = (data.sizes[mon.size] ?? data.sizes["medium"]).hitDie,
+        hitDieSize = (data.sizes[mon.size] ?? data.sizes["mitjà"]).hitDie,
             avgHP = Math.floor(mon.hitDice * ((hitDieSize + 1) / 2)) + (mon.hitDice * conBonus);
         if (conBonus > 0)
             return avgHP + " (" + mon.hitDice + "d" + hitDieSize + " + " + (mon.hitDice * conBonus) + ")";
