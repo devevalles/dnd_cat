@@ -208,7 +208,7 @@
 }
 
 .actions h3 {
-    border-bottom: 2px solid #7A200D;
+    position: relative;
     color: #7A200D;
     font-size: 21px;
     font-variant: small-caps;
@@ -217,6 +217,17 @@
     margin: 20px 0 0;
     padding: 0 0 10px;
     text-indent: 5px;
+}
+
+.actions h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #922610;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 .actions {
@@ -228,7 +239,7 @@
 }
 
 .guns-section h3 {
-    border-bottom: 2px solid #7A200D;
+    position: relative;
     color: #7A200D;
     font-size: 21px;
     font-variant: small-caps;
@@ -237,6 +248,17 @@
     margin: 20px 0 0;
     padding: 0 0 10px;
     text-indent: 5px;
+}
+
+.guns-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #922610;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 .guns-table {
@@ -290,8 +312,8 @@
     color: black;
 }
 
-#print-block h3 {
-    border-bottom-color: black;
+#print-block h3::after {
+    background: black;
 }
 
 #print-block .tapered-rule {
