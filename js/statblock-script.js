@@ -5,7 +5,6 @@ var mon = {
     size: "mitjà",
     type: "humanoide",
     tag: "",
-    alignment: "any alignment",
     hitDice: 5,
     armorName: "none",
     shieldBonus: 0,
@@ -176,8 +175,9 @@ function UpdateStatblock(moveSeparationPoint) {
 
     // Name and type
     $("#monster-name").html(StringFunctions.RemoveHtmlTags(mon.name));
-    $("#monster-type").html(StringFunctions.StringCapitalize(StringFunctions.RemoveHtmlTags(mon.size) + " " + mon.type +
-        (mon.tag == "" ? ", " : " (" + mon.tag + "), ") + mon.alignment));
+    $("#monster-tag").html(StringFunctions.StringCapitalize(StringFunctions.RemoveHtmlTags(mon.tag)));
+    $("#monster-tag").toggle(mon.tag != "");
+    $("#monster-type").html(StringFunctions.StringCapitalize(StringFunctions.RemoveHtmlTags(mon.size) + " " + mon.type));
 
     // Armor Class
     $("#armor-class").html(StringFunctions.FormatString(StringFunctions.RemoveHtmlTags(StringFunctions.GetArmorData())));
@@ -446,9 +446,12 @@ function BuildMarkdown(isV3Markdown) {
         markdownLines.push("___");
     }
 
+    markdownLines.push(`## ${mon.name}`);
+    if (mon.tag != "") {
+        markdownLines.push(`**${StringFunctions.StringCapitalize(mon.tag)}**`);
+    }
     markdownLines.push(
-        `## ${mon.name}`,
-        `*${StringFunctions.StringCapitalize(mon.size)} ${mon.type}${mon.tag != "" ? ` (${mon.tag})`  : ""}, ${mon.alignment}*`,
+        `*${StringFunctions.StringCapitalize(mon.size)} ${mon.type}*`,
         `___`,
         PrintMarkdownProperty(isV3Markdown, "Armor Class", StringFunctions.FormatString(StringFunctions.GetArmorData())),
         PrintMarkdownProperty(isV3Markdown, "Hit Points", StringFunctions.GetHP()), 
@@ -598,9 +601,8 @@ var FormFunctions = {
         }
         this.ShowHideTypeOther();
 
-        // Tag and Alignment
+        // Tag
         $("#tag-input").val(mon.tag);
-        $("#alignment-input").val(mon.alignment);
 
         // Armor Class
         $("#armor-input").val(mon.armorName);
@@ -1123,7 +1125,6 @@ var GetVariablesFunctions = {
         if (mon.type == "*")
             mon.type = $("#other-type-input").val();
         mon.tag = $("#tag-input").val().trim();
-        mon.alignment = $("#alignment-input").val().trim();
 
         // Armor Class
         mon.armorName = $("#armor-input").val();
@@ -1209,7 +1210,6 @@ var GetVariablesFunctions = {
         mon.size = preset.size.trim().toLowerCase();
         mon.type = preset.type.trim();
         mon.tag = preset.subtype.trim();
-        mon.alignment = preset.alignment.trim();
 
         // Stats
         mon.strPoints = preset.strength;

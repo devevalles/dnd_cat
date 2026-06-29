@@ -101,6 +101,11 @@
     margin: 0;
 }
 
+.creature-heading h2#monster-tag {
+    font-weight: bold;
+    font-style: normal;
+}
+
 .property-line h4,
 .property-line p {
     display: inline;

@@ -1,5 +1,7 @@
 # Generador de Blocs d'Estadístiques D&D 5e
 
+🔗 **[Obre l'eina aquí](https://devevalles.github.io/dnd_cat/)**
+
 Una eina per crear blocs d'estadístiques de monstres de D&D 5e. Omple el formulari de l'esquerra, veu el bloc actualitzar-se en temps real a la dreta, i exporta'l com a PNG o imprimeix-lo.
 
 ---
